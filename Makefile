@@ -3,7 +3,7 @@ all:
 	g++ src/main.cpp -o build/test
 
 clear:
-	rm build/test
+	rm build/cplayer
 
 run:
-	/build/test
+	./build/test
