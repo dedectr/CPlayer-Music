@@ -1,16 +1,15 @@
-# Variáveis para facilitar mudanças
-CXX = g++
-CXXFLAGS = -Wall -g -std=c++17
-LIBS = -lsfml-audio -lsfml-system
-SRC = src/main.cpp
+CC = gcc
+CFLAGS = -Wall -g $(shell sdl2-config --cflags)
+LIBS = $(shell sdl2-config --libs) -lSDL2_mixer
+SRC = src/main.c
 TARGET = build/cplayer
 
 all:
 	mkdir -p build/
-	$(CXX) $(SRC) -o $(TARGET) $(CXXFLAGS) $(LIBS)
+	$(CC) $(SRC) -o $(TARGET) $(CFLAGS) $(LIBS)
 
 clear:
 	rm -rf build/
 
 run:
-	ALSOFT_DRIVERS=pulse ./$(TARGET)
+	./$(TARGET)
