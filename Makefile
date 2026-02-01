@@ -1,9 +1,16 @@
+# Variáveis para facilitar mudanças
+CXX = g++
+CXXFLAGS = -Wall -g -std=c++17
+LIBS = -lsfml-audio -lsfml-system
+SRC = src/main.cpp
+TARGET = build/cplayer
+
 all:
 	mkdir -p build/
-	g++ src/main.cpp -o build/cplayer -Wall -g
+	$(CXX) $(SRC) -o $(TARGET) $(CXXFLAGS) $(LIBS)
 
 clear:
-	rm build/cplayer
+	rm -rf build/
 
 run:
-	./build/cplayer
+	ALSOFT_DRIVERS=pulse ./$(TARGET)
