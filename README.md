@@ -3,14 +3,14 @@
 # Functions
 - Tocar Musica (local) [x]
 	- Play [x]
-	- Skip []
-	- loop []
-	- armazeanar as musica pra fazer playlist []
-- Tocar Musica Spotify []
+	- Skip [ ]
+	- loop [ ]
+	- armazeanar as musica pra fazer playlist [ ]
+- Tocar Musica Spotify [ ]
 	- Ainda não está em desenvolvimento
-- Tocar Musica Youtube []
+- Tocar Musica Youtube [ ]
  	- Ainda não está em desenvolvimento
-- Baixar Musica (somente Youtube) []
+- Baixar Musica (somente Youtube) [ ]
 	- Ainda não está em desenvolvimento
 # Instalação
 
@@ -19,6 +19,7 @@ git clone git@github.com:dedectr/CPlayer-Music
 cd CPlayer-Music
 make && make run
 ```
-# Libs
+# Libs Usadas
 - SDL2
+- ncurses
 
