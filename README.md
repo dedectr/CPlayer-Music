@@ -1,3 +1,17 @@
+# Sobre o Porjeto
+- Projeto Open Source,esse projeto pode ser melhorado é tambem,quero ajuda do pessoal pra melhorar ele,caso você queira fazer um Fork,fique avontade.
+# Functions
+- Tocar Musica (local) [x]
+	- Play [x]
+	- Skip []
+	- loop []
+	- armazeanar as musica pra fazer playlist []
+- Tocar Musica Spotify []
+	- Ainda não está em desenvolvimento
+- Tocar Musica Youtube []
+ 	- Ainda não está em desenvolvimento
+- Baixar Musica (somente Youtube) []
+	- Ainda não está em desenvolvimento
 # Instalação
 
 ```
@@ -7,11 +21,4 @@ make && make run
 ```
 # Libs
 - SDL2
-
-# Sobre o Porjeto
-- Projeto Open Source,esse projeto pode ser melhorado é tambem,quero ajuda do pessoal pra melhorar ele,caso você queira fazer um Fork,fique avontade.
-
-
-
-
 

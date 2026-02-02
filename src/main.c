@@ -15,11 +15,12 @@ void inicializar(Player *p) {
     }
 }
 
+
 int main(int argc,char* argv[]){
 	Player meuPlayer;
 	meuPlayer.musica = NULL;
 	char caminho[512];
-    
+
 	inicializar(&meuPlayer);
 	printf("Digite o caminho da musica (.mp3 ou .wav): ");
     scanf("%s", caminho);
