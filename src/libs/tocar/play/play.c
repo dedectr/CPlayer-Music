@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "player.h"
+#include "play.h"
 
 void inicializar(Player *p) {
     p->musica = NULL;
@@ -14,6 +14,11 @@ void inicializar(Player *p) {
 }
 
 int carregarMusica(Player *p, const char *caminho) {
+    if (p->musica) {
+        Mix_FreeMusic(p->musica);
+        p->musica = NULL;
+    }
+
     p->musica = Mix_LoadMUS(caminho);
     if (!p->musica) {
         printf("Erro ao carregar: %s\n", Mix_GetError());
@@ -24,7 +29,17 @@ int carregarMusica(Player *p, const char *caminho) {
 
 void tocar(Player *p) {
     if (p->musica) {
-        Mix_PlayMusic(p->musica, 1);
+        Mix_PlayMusic(p->musica, 0); // 0 = toca 1 vez
+    }
+}
+
+void loop(Player *p, int quantos_loops) {
+    if (!p->musica) return;
+
+    if (quantos_loops < 0) {
+        Mix_PlayMusic(p->musica, -1); // loop infinito
+    } else {
+        Mix_PlayMusic(p->musica, quantos_loops); // repete N+1 vezes
     }
 }
 
