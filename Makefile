@@ -6,6 +6,7 @@ SRC = src/main.c src/libs/tocar/play/play.c
 OBJ = $(SRC:.c=.o)
 TARGET = build/cplayer
 
+
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
