@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "./libs/tocar/play/play.h"
 
-int main() {
+int main(int argc,char *argv[]) {
     Player meuPlayer;
     char caminho[512];
     int repetir_music = 0;

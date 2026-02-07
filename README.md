@@ -1,4 +1,4 @@
-# Sobre o Porjeto
+# Sobre o Projeto
 - Projeto Open Source,esse projeto pode ser melhorado é tambem,quero ajuda do pessoal pra melhorar ele,caso você queira fazer um Fork,fique avontade.
 # Functions
 - Tocar Musica (local) [x]
