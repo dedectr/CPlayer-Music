@@ -4,7 +4,7 @@
 - Tocar Musica (local) [x]
 	- Play [x]
 	- Skip [ ]
-	- loop [ ]
+	- loop [x]
 	- armazeanar as musica pra fazer playlist [ ]
 - Tocar Musica Spotify [ ]
 	- Ainda não está em desenvolvimento
@@ -21,5 +21,5 @@ make && make run
 ```
 # Libs Usadas
 - SDL2
-- ncurses
+- ncurses (ainda não foi efetivada)
 
